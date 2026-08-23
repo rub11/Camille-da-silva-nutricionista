@@ -57,9 +57,9 @@ document.querySelectorAll('.btn-primary, .btn-whatsapp').forEach(btn => {
         if (this.classList.contains('btn-whatsapp')) {
             // Redirecionar para WhatsApp (exemplo)
             // window.location.href = 'https://wa.me/5511999999999';
-            alert('Abrir WhatsApp para agendamento.');
+           
         } else {
-            alert('Você será redirecionado para agendar sua consulta.');
+           
         }
     });
 });
