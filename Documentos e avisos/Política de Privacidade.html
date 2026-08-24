@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade e Proteção de Dados Pessoais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #1e2a3a;
+            padding: 2rem 1rem;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.5rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #0b2b44;
+            border-bottom: 4px solid #2d6b7c;
+            padding-bottom: 0.6rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #1a4b5e;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+            border-left: 6px solid #2d6b7c;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #1f5a6b;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 0.8rem 0 1.2rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight-box {
+            background: #f0f7f5;
+            padding: 1.2rem 1.8rem;
+            border-radius: 10px;
+            border-left: 5px solid #2d6b7c;
+            margin: 1.5rem 0;
+        }
+
+        .field-placeholder {
+            background: #eef2f7;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+            color: #0b3b4a;
+            border: 1px dashed #3a7a8a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        table th {
+            background: #dce5ed;
+            color: #1a3b4a;
+            font-weight: 600;
+            padding: 0.7rem 0.5rem;
+            border: 1px solid #b0c4d4;
+            text-align: left;
+        }
+
+        table td {
+            padding: 0.7rem 0.5rem;
+            border: 1px solid #b0c4d4;
+            vertical-align: top;
+        }
+
+        table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .btn-accept {
+            display: block;
+            width: 100%;
+            max-width: 450px;
+            margin: 3rem auto 1.5rem;
+            padding: 1rem 2rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            background: #1e6b5e;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 4px 12px rgba(30, 107, 94, 0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-accept:hover {
+            background: #145a4e;
+        }
+
+        .btn-accept:active {
+            transform: scale(0.97);
+        }
+
+        .btn-accept:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .acceptance-message {
+            text-align: center;
+            font-size: 1rem;
+            color: #1e6b5e;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            min-height: 2.5rem;
+        }
+
+        .footer-note {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #dce5ed;
+            font-size: 0.95rem;
+            color: #3a4f5e;
+        }
+
+        .legal-warning {
+            background: #fff6e5;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            border: 1px solid #f0c78a;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .legal-warning strong {
+            color: #8a5a1a;
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.2rem 1.5rem;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .checklist-grid li {
+            margin-bottom: 0.3rem;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            ul, ol {
+                margin-left: 1.2rem;
+            }
+            .checklist-grid {
+                grid-template-columns: 1fr;
+            }
+            table {
+                font-size: 0.85rem;
+            }
+            table th, table td {
+                padding: 0.4rem 0.3rem;
+            }
+        }
+
+        @media print {
+            .btn-accept {
+                display: none;
+            }
+            .acceptance-message {
+                display: none;
+            }
+            body {
+                background: #fff;
+                padding: 0.5in;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>POLÍTICA DE PRIVACIDADE E PROTEÇÃO DE DADOS PESSOAIS</h1>
+    <p style="text-align:center; color:#3f5a6b; font-weight:500;">Versão 1.0 – Última atualização: <span class="field-placeholder">[DATA]</span></p>
+
+    <!-- ==================== SEÇÃO 1 ==================== -->
+    <h2>1. APRESENTAÇÃO</h2>
+    <p>A presente Política de Privacidade e Proteção de Dados Pessoais (doravante denominada "Política") tem como finalidade esclarecer, de forma transparente, como a profissional nutricionista <span class="field-placeholder">[NOME PROFISSIONAL]</span> coleta, utiliza, armazena, protege e eventualmente compartilha os dados pessoais dos usuários do site, pacientes e clientes.</p>
+    <p>Esta Política se aplica a todas as interações realizadas por meio do site <span class="field-placeholder">[DOMÍNIO]</span>, bem como durante a prestação de serviços nutricionais presenciais ou por teleatendimento.</p>
+    <p>A profissional valoriza a privacidade e a proteção dos dados pessoais, e adota esta Política para garantir que o tratamento de dados seja realizado de acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD – Lei nº 13.709/2018) e demais normas aplicáveis.</p>
+
+    <!-- ==================== SEÇÃO 2 ==================== -->
+    <h2>2. IDENTIFICAÇÃO DO CONTROLADOR</h2>
+    <p>O controlador dos dados pessoais tratados no âmbito deste site e dos serviços prestados é a nutricionista abaixo identificada:</p>
+    <ul>
+        <li><strong>Nome completo:</strong> <span class="field-placeholder">[NOME COMPLETO]</span></li>
+        <li><strong>Nome profissional:</strong> <span class="field-placeholder">[NOME PROFISSIONAL]</span></li>
+        <li><strong>CPF/CNPJ:</strong> <span class="field-placeholder">[CPF OU CNPJ]</span></li>
+        <li><strong>CRN:</strong> <span class="field-placeholder">[NÚMERO DO CRN]</span></li>
+        <li><strong>Endereço profissional:</strong> <span class="field-placeholder">[ENDEREÇO]</span></li>
+        <li><strong>E-mail:</strong> <span class="field-placeholder">[E-MAIL]</span></li>
+        <li><strong>Telefone/WhatsApp:</strong> <span class="field-placeholder">[TELEFONE]</span></li>
+        <li><strong>Cidade/UF:</strong> <span class="field-placeholder">[CIDADE - UF]</span></li>
+        <li><strong>Site:</strong> <span class="field-placeholder">[DOMÍNIO]</span></li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 3 ==================== -->
+    <h2>3. O QUE SÃO DADOS PESSOAIS</h2>
+    <p>Dado pessoal é qualquer informação que identifique ou possa identificar uma pessoa natural. Exemplos comuns incluem:</p>
+    <ul>
+        <li>Nome completo;</li>
+        <li>CPF;</li>
+        <li>Endereço de e-mail;</li>
+        <li>Número de telefone;</li>
+        <li>Endereço residencial;</li>
+        <li>Data de nascimento;</li>
+        <li>Informações de cadastro;</li>
+        <li>Informações fornecidas durante o atendimento.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 4 ==================== -->
+    <h2>4. DADOS PESSOAIS SENSÍVEIS</h2>
+    <p>Dados pessoais sensíveis são aqueles que merecem proteção especial, pois podem revelar aspectos íntimos da pessoa. A LGPD classifica como sensíveis os dados relativos à origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou organização religiosa, filosófica ou política, dados referentes à saúde ou vida sexual, e dados genéticos ou biométricos.</p>
+    <p>No contexto da atividade de nutricionista, são considerados dados sensíveis, entre outros:</p>
+    <ul>
+        <li>Histórico de saúde e doenças;</li>
+        <li>Alergias e intolerâncias alimentares;</li>
+        <li>Medicamentos e suplementos em uso;</li>
+        <li>Exames laboratoriais e de imagem;</li>
+        <li>Peso, altura, medidas e composição corporal;</li>
+        <li>Histórico alimentar e hábitos de vida;</li>
+        <li>Condições clínicas e gestacionais;</li>
+        <li>Informações fornecidas durante a consulta.</li>
+    </ul>
+    <p>Esses dados serão tratados com rigoroso respeito à finalidade, necessidade e demais princípios da LGPD, e sempre com base em hipóteses legais adequadas.</p>
+
+    <!-- ==================== SEÇÃO 5 ==================== -->
+    <h2>5. QUAIS DADOS PODEM SER COLETADOS</h2>
+
+    <h3>5.1. Dados cadastrais</h3>
+    <ul>
+        <li>Nome completo;</li>
+        <li>CPF (quando necessário para emissão de documentos ou identificação);</li>
+        <li>Data de nascimento;</li>
+        <li>Telefone e WhatsApp;</li>
+        <li>Endereço de e-mail;</li>
+        <li>Endereço residencial ou profissional (para consultas presenciais).</li>
+    </ul>
+
+    <h3>5.2. Dados relacionados ao atendimento</h3>
+    <ul>
+        <li>Histórico alimentar e hábitos de consumo;</li>
+        <li>Preferências, restrições e intolerâncias alimentares;</li>
+        <li>Alergias e hipersensibilidades;</li>
+        <li>Peso, altura, medidas antropométricas e composição corporal;</li>
+        <li>Informações sobre atividade física e estilo de vida;</li>
+        <li>Exames laboratoriais e de imagem (quando fornecidos);</li>
+        <li>Medicamentos e suplementos utilizados;</li>
+        <li>Histórico de doenças, cirurgias e condições de saúde;</li>
+        <li>Informações sobre gestação, amamentação ou planejamento;</li>
+        <li>Demais informações voluntariamente fornecidas pelo paciente.</li>
+    </ul>
+
+    <h3>5.3. Dados técnicos e de navegação</h3>
+    <p>Dependendo da configuração do site e das ferramentas utilizadas, poderão ser coletadas informações técnicas como:</p>
+    <ul>
+        <li>Endereço IP;</li>
+        <li>Tipo de navegador e versão;</li>
+        <li>Sistema operacional e dispositivo;</li>
+        <li>Data e hora do acesso;</li>
+        <li>Páginas visitadas e interações;</li>
+        <li>Cookies e tecnologias semelhantes (ver seção 15).</li>
+    </ul>
+    <p>Esses dados são utilizados para melhorar a experiência do usuário e para fins de segurança e estatística, respeitando a legislação.</p>
+
+    <!-- ==================== SEÇÃO 6 ==================== -->
+    <h2>6. COMO OS DADOS SÃO COLETADOS</h2>
+    <p>Os dados pessoais podem ser coletados por meio dos seguintes canais e formas:</p>
+    <ul>
+        <li><strong>Formulários de contato e agendamento</strong> disponíveis no site;</li>
+        <li><strong>Comunicação via WhatsApp</strong> e mensagens de texto;</li>
+        <li><strong>E-mail</strong> enviado para o endereço profissional;</li>
+        <li><strong>Telefone</strong> durante chamadas;</li>
+        <li><strong>Consultas presenciais</strong> – durante a anamnese e avaliação;</li>
+        <li><strong>Teleatendimento</strong> – durante a consulta remota;</li>
+        <li><strong>Cadastro</strong> para recebimento de materiais ou newsletters;</li>
+        <li><strong>Cookies</strong> e tecnologias de rastreamento (ver seção 15);</li>
+        <li><strong>Ferramentas de terceiros</strong> integradas ao site, como plataformas de agendamento e pagamento.</li>
+    </ul>
+    <p>A coleta é sempre limitada ao necessário para as finalidades descritas, respeitando os princípios da minimização e necessidade.</p>
+
+    <!-- ==================== SEÇÃO 7 ==================== -->
+    <h2>7. FINALIDADES DO TRATAMENTO</h2>
+    <p>Os dados pessoais coletados poderão ser utilizados para as seguintes finalidades, sempre de acordo com a base legal aplicável:</p>
+    <ul>
+        <li><strong>Agendamento e confirmação</strong> de consultas e retornos;</li>
+        <li><strong>Prestação do atendimento nutricional</strong>, incluindo avaliação, diagnóstico, elaboração de plano alimentar e orientações;</li>
+        <li><strong>Acompanhamento</strong> da evolução do paciente;</li>
+        <li><strong>Comunicação</strong> administrativa e clínica com o paciente;</li>
+        <li><strong>Emissão de documentos</strong> como recibos, declarações e prontuários;</li>
+        <li><strong>Processamento de pagamentos</strong> por meio de plataformas especializadas;</li>
+        <li><strong>Cumprimento de obrigações legais, regulatórias e profissionais</strong> (ex.: manter prontuários, atender ao Código de Ética da Nutrição);</li>
+        <li><strong>Exercício regular de direitos</strong> em processos judiciais, administrativos ou arbitrais;</li>
+        <li><strong>Segurança e prevenção a fraudes</strong>;</li>
+        <li><strong>Atendimento a solicitações do titular</strong>, como correção, exclusão ou portabilidade de dados;</li>
+        <li><strong>Melhoria dos serviços</strong> e da experiência do usuário, por meio de análises estatísticas e de satisfação.</li>
+    </ul>
+    <p>A profissional poderá utilizar os dados para outras finalidades compatíveis com as acima, desde que devidamente informadas e respaldadas em base legal adequada.</p>
+
+    <!-- ==================== SEÇÃO 8 ==================== -->
+    <h2>8. BASES LEGAIS</h2>
+    <p>O tratamento de dados pessoais no Brasil deve estar fundamentado em uma base legal prevista na LGPD. A profissional adota bases legais adequadas a cada tipo de tratamento, conforme a situação concreta.</p>
+
+    <h3>8.1. Para dados pessoais comuns</h3>
+    <p>Dependendo da finalidade, as bases legais que podem ser utilizadas incluem:</p>
+    <ul>
+        <li><strong>Consentimento</strong> do titular, quando livre, informado e inequívoco;</li>
+        <li><strong>Cumprimento de obrigação legal ou regulatória</strong> (ex.: guarda de prontuários);</li>
+        <li><strong>Execução de contrato</strong> ou de procedimentos preliminares a ele relacionados;</li>
+        <li><strong>Exercício regular de direitos</strong> em processo judicial, administrativo ou arbitral;</li>
+        <li><strong>Proteção da vida</strong> ou da incolumidade física do titular ou de terceiros;</li>
+        <li><strong>Legítimo interesse</strong> do controlador ou de terceiros, desde que não prevaleçam os interesses ou direitos fundamentais do titular;</li>
+        <li><strong>Outras hipóteses</strong> previstas no art. 7º da LGPD.</li>
+    </ul>
+
+    <h3>8.2. Para dados pessoais sensíveis</h3>
+    <p>O tratamento de dados sensíveis (como os relacionados à saúde) deve respeitar as hipóteses específicas do art. 11 da LGPD, tais como:</p>
+    <ul>
+        <li><strong>Consentimento específico e destacado</strong> do titular para finalidades determinadas;</li>
+        <li><strong>Cumprimento de obrigação legal ou regulatória</strong> pelo controlador;</li>
+        <li><strong>Tratamento compartilhado de dados</strong> para proteção da vida ou saúde, em procedimentos realizados por profissionais de saúde;</li>
+        <li><strong>Garantia da prevenção à fraude</strong> e segurança do titular, em processos de identificação e autenticação;</li>
+        <li><strong>Proteção da vida</strong> ou da saúde do titular ou de terceiros, quando não for possível obter consentimento;</li>
+        <li><strong>Exercício regular de direitos</strong>, inclusive em contratos e processos judiciais.</li>
+    </ul>
+    <p>A profissional adota a base legal mais adequada a cada caso, evitando o uso de consentimento como única base quando outras são mais apropriadas.</p>
+
+    <!-- ==================== SEÇÃO 9 ==================== -->
+    <h2>9. CONSENTIMENTO</h2>
+    <p>Consentimento é a manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados para uma finalidade determinada.</p>
+    <p>Quando o tratamento depender de consentimento, a profissional:</p>
+    <ul>
+        <li>Solicitará o consentimento de forma clara e destacada, separada de outros termos;</li>
+        <li>Informará a finalidade específica para a qual o consentimento é solicitado;</li>
+        <li>Garantirá que o titular possa revogar o consentimento a qualquer momento, por meio de procedimento simples e gratuito;</li>
+        <li>Respeitará a revogação, observadas as consequências jurídicas e a existência de outras bases legais que possam justificar a manutenção do tratamento.</li>
+    </ul>
+    <p>A revogação do consentimento não invalida o tratamento realizado até aquele momento com base na autorização dada.</p>
+
+    <!-- ==================== SEÇÃO 10 ==================== -->
+    <h2>10. DADOS DE SAÚDE</h2>
+    <p>Dados relacionados à saúde são tratados como dados pessoais sensíveis, com proteção reforçada. A profissional utiliza essas informações exclusivamente para a prestação adequada do serviço nutricional, respeitando os princípios da necessidade, finalidade e adequação.</p>
+    <p>A coleta é limitada ao estritamente necessário para:</p>
+    <ul>
+        <li>Realizar a avaliação nutricional;</li>
+        <li>Elaborar o plano alimentar e as orientações;</li>
+        <li>Acompanhar a evolução do paciente;</li>
+        <li>Garantir a segurança e eficácia do tratamento.</li>
+    </ul>
+    <p>Nenhuma informação de saúde será coletada sem justificativa clara, e o paciente será sempre informado sobre a finalidade da coleta.</p>
+
+    <!-- ==================== SEÇÃO 11 ==================== -->
+    <h2>11. DADOS DE CRIANÇAS E ADOLESCENTES</h2>
+    <p>O tratamento de dados pessoais de crianças e adolescentes (menores de 18 anos) observa as regras específicas da LGPD e do Estatuto da Criança e do Adolescente.</p>
+    <p>No atendimento nutricional de menores, a profissional adota as seguintes diretrizes:</p>
+    <ul>
+        <li>Os dados serão coletados com a participação e autorização de um dos pais ou do responsável legal, quando exigido;</li>
+        <li>As informações de saúde da criança/adolescente serão fornecidas pelo responsável;</li>
+        <li>O responsável legal deverá comparecer à consulta (presencial ou virtual) e acompanhar o atendimento;</li>
+        <li>O tratamento observará o superior interesse da criança/adolescente.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 12 ==================== -->
+    <h2>12. COMPARTILHAMENTO DE DADOS</h2>
+    <p>A profissional poderá compartilhar dados pessoais nas seguintes situações, sempre com fundamento legal e necessidade:</p>
+    <ul>
+        <li><strong>Plataformas de agendamento</strong> – para gerenciamento da agenda e confirmação de consultas;</li>
+        <li><strong>Plataformas de pagamento</strong> – para processamento de transações financeiras;</li>
+        <li><strong>Serviços de hospedagem e armazenamento</strong> – para manutenção do site e backup de dados;</li>
+        <li><strong>Ferramentas de comunicação</strong> (WhatsApp, e-mail) – para contato com o paciente;</li>
+        <li><strong>Profissionais colaboradores</strong> – quando houver necessidade de atuação conjunta (ex.: outros nutricionistas, médicos, psicólogos), sempre com a devida autorização e observando o sigilo;</li>
+        <li><strong>Autoridades públicas</strong> – quando houver obrigação legal ou determinação judicial;</li>
+        <li><strong>Prestadores de serviços</strong> essenciais à operação do site e dos serviços, sempre por meio de contratos que assegurem a proteção dos dados.</li>
+    </ul>
+    <p>O compartilhamento é limitado ao mínimo necessário e os terceiros contratados devem seguir rigorosas obrigações de confidencialidade e segurança.</p>
+
+    <!-- ==================== SEÇÃO 13 ==================== -->
+    <h2>13. FORNECEDORES E TERCEIROS</h2>
+    <p>Abaixo estão listados os fornecedores e plataformas eventualmente utilizados pela profissional, que poderão ter acesso a dados pessoais no âmbito da prestação dos serviços:</p>
+    <ul>
+        <li><strong>Plataforma de agendamento:</strong> <span class="field-placeholder">[EMPRESA]</span></li>
+        <li><strong>Plataforma de pagamento:</strong> <span class="field-placeholder">[EMPRESA]</span></li>
+        <li><strong>Hospedagem do site:</strong> <span class="field-placeholder">[EMPRESA]</span></li>
+        <li><strong>Armazenamento de dados:</strong> <span class="field-placeholder">[EMPRESA]</span></li>
+        <li><strong>WhatsApp (Meta):</strong> WhatsApp Inc.</li>
+        <li><strong>Videoconferência:</strong> <span class="field-placeholder">[EMPRESA]</span></li>
+        <li><strong>Google Analytics:</strong> <span class="field-placeholder">[UTILIZA/NÃO UTILIZA]</span></li>
+        <li><strong>Meta Pixel:</strong> <span class="field-placeholder">[UTILIZA/NÃO UTILIZA]</span></li>
+        <li><strong>Outros:</strong> <span class="field-placeholder">[DESCREVER]</span></li>
+    </ul>
+    <p>A profissional adota critérios rigorosos na escolha de fornecedores, exigindo que cumpram a legislação de proteção de dados e adotem medidas de segurança compatíveis.</p>
+
+    <!-- ==================== SEÇÃO 14 ==================== -->
+    <h2>14. TRANSFERÊNCIA INTERNACIONAL DE DADOS</h2>
+    <p>Algumas plataformas tecnológicas utilizadas pela profissional podem realizar tratamento ou armazenamento de dados em servidores localizados fora do Brasil (ex.: WhatsApp, Google, serviços de hospedagem).</p>
+    <p>A profissional adota as seguintes medidas em relação a transferências internacionais:</p>
+    <ul>
+        <li>Verifica se a plataforma está em conformidade com a LGPD ou oferece garantias adequadas;</li>
+        <li>Prefere fornecedores que mantenham servidores no Brasil ou que adotem cláusulas contratuais padronizadas;</li>
+        <li>Sempre que possível, limita o compartilhamento internacional ao estritamente necessário.</li>
+    </ul>
+    <p><strong>Transferência internacional declarada:</strong> <span class="field-placeholder">[SIM/NÃO]</span></p>
+    <p>Se sim: <span class="field-placeholder">[DESCREVER]</span></p>
+
+    <!-- ==================== SEÇÃO 15 ==================== -->
+    <h2>15. COOKIES</h2>
+    <p>Cookies são pequenos arquivos de texto armazenados no dispositivo do usuário para melhorar a experiência de navegação, lembrar preferências e coletar dados estatísticos.</p>
+    <p>O site <span class="field-placeholder">[DOMÍNIO]</span> poderá utilizar os seguintes tipos de cookies:</p>
+    <ul>
+        <li><strong>Cookies necessários</strong> – essenciais para o funcionamento básico do site (ex.: navegação, segurança);</li>
+        <li><strong>Cookies analíticos</strong> – para análise de tráfego e comportamento dos usuários (ex.: Google Analytics);</li>
+        <li><strong>Cookies de funcionalidade</strong> – para lembrar preferências e facilitar o uso;</li>
+        <li><strong>Cookies de publicidade</strong> – caso o site utilize ferramentas de remarketing ou anúncios (não é o caso deste site, a menos que seja informado).</li>
+    </ul>
+    <p><strong>Cookies utilizados:</strong> <span class="field-placeholder">[LISTAR]</span></p>
+    <p><strong>Finalidade:</strong> <span class="field-placeholder">[DESCREVER]</span></p>
+    <p>O usuário pode gerenciar ou desativar cookies por meio das configurações do seu navegador, mas isso pode afetar a funcionalidade do site.</p>
+
+    <!-- ==================== SEÇÃO 16 ==================== -->
+    <h2>16. GOOGLE ANALYTICS E FERRAMENTAS DE ANÁLISE</h2>
+    <p>O site poderá utilizar ferramentas de análise para compreender o comportamento dos visitantes e melhorar a experiência.</p>
+    <ul>
+        <li><strong>Google Analytics:</strong> <span class="field-placeholder">[UTILIZA/NÃO UTILIZA]</span></li>
+        <li><strong>Meta Pixel:</strong> <span class="field-placeholder">[UTILIZA/NÃO UTILIZA]</span></li>
+        <li><strong>Outras ferramentas:</strong> <span class="field-placeholder">[DESCREVER]</span></li>
+    </ul>
+    <p>Essas ferramentas podem coletar informações técnicas como endereço IP, páginas visitadas, tempo de permanência e interações, conforme suas próprias políticas de privacidade. A profissional adota medidas para anonimizar esses dados sempre que possível.</p>
+
+    <!-- ==================== SEÇÃO 17 ==================== -->
+    <h2>17. MARKETING E COMUNICAÇÃO</h2>
+    <p>Os dados de contato (e-mail, telefone, WhatsApp) poderão ser utilizados para:</p>
+    <ul>
+        <li><strong>Comunicação administrativa</strong> – envio de confirmações, lembretes de consulta, informações sobre agendamento e alterações;</li>
+        <li><strong>Comunicação de marketing</strong> – envio de conteúdos informativos, novidades, dicas de nutrição, ofertas especiais, desde que haja consentimento do titular e que seja possível descadastrar-se a qualquer momento.</li>
+    </ul>
+    <p>A comunicação de marketing será sempre opcional, com possibilidade de cancelamento por meio de link ou contato direto.</p>
+
+    <!-- ==================== SEÇÃO 18 ==================== -->
+    <h2>18. WHATSAPP</h2>
+    <p>O WhatsApp pode ser utilizado para comunicação entre a profissional e o paciente, principalmente para agendamentos, confirmações, envio de orientações administrativas e esclarecimento de dúvidas relacionadas ao serviço.</p>
+    <p>É importante destacar que o WhatsApp é uma plataforma de propriedade da Meta, com sua própria Política de Privacidade, e que a profissional não controla a infraestrutura de segurança do aplicativo.</p>
+    <p>Recomenda-se que o paciente não compartilhe informações excessivas ou desnecessárias pelo WhatsApp, e que utilize canais seguros para dados sensíveis.</p>
+
+    <!-- ==================== SEÇÃO 19 ==================== -->
+    <h2>19. SEGURANÇA DOS DADOS</h2>
+    <p>A profissional adota medidas técnicas e administrativas razoáveis para proteger os dados pessoais contra acessos não autorizados, perda, destruição ou alteração, incluindo:</p>
+    <ul>
+        <li>Controle de acesso restrito a dados e sistemas;</li>
+        <li>Uso de senhas fortes e autenticação para acesso a sistemas;</li>
+        <li>Manutenção de sistemas atualizados e com proteção contra vulnerabilidades;</li>
+        <li>Armazenamento seguro de dados em servidores confiáveis;</li>
+        <li>Limitação do acesso aos dados apenas a pessoas autorizadas e com necessidade legítima;</li>
+        <li>Realização de cópias de segurança (backups) periódicas, quando aplicável;</li>
+        <li>Implementação de políticas internas de segurança da informação.</li>
+    </ul>
+    <p>Ressalta-se, porém, que nenhuma tecnologia ou método de transmissão é 100% seguro, e a profissional não pode garantir segurança absoluta, embora empenhe todos os esforços para proteger os dados.</p>
+
+    <!-- ==================== SEÇÃO 20 ==================== -->
+    <h2>20. INCIDENTES DE SEGURANÇA</h2>
+    <p>Em caso de incidente de segurança que possa comprometer dados pessoais, a profissional adotará as seguintes providências:</p>
+    <ul>
+        <li>Avaliação do incidente e suas consequências;</li>
+        <li>Adoção de medidas para mitigar danos e prevenir recorrência;</li>
+        <li>Comunicação à Autoridade Nacional de Proteção de Dados (ANPD) e aos titulares afetados, se for o caso, nos termos da legislação aplicável;</li>
+        <li>Documentação do incidente e das ações tomadas.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 21 ==================== -->
+    <h2>21. ARMAZENAMENTO E RETENÇÃO</h2>
+    <p>Os dados pessoais são armazenados pelo período necessário para atender às finalidades para as quais foram coletados, respeitando também obrigações legais, regulatórias e profissionais.</p>
+    <p>Os critérios de retenção variam conforme a categoria do dado e a finalidade. Abaixo, uma tabela ilustrativa (a ser preenchida pela profissional):</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Categoria do dado</th>
+                <th>Finalidade</th>
+                <th>Prazo/critério de retenção</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dados cadastrais (nome, telefone, e-mail)</td>
+                <td>Identificação e contato</td>
+                <td><span class="field-placeholder">[EX.: durante o acompanhamento + 5 anos]</span></td>
+            </tr>
+            <tr>
+                <td>Dados de saúde (prontuário)</td>
+                <td>Atendimento e obrigação legal</td>
+                <td><span class="field-placeholder">[EX.: conforme Código de Ética – mínimo 5 anos]</span></td>
+            </tr>
+            <tr>
+                <td>Dados de pagamento</td>
+                <td>Processamento financeiro</td>
+                <td><span class="field-placeholder">[EX.: enquanto necessários para fins fiscais]</span></td>
+            </tr>
+            <tr>
+                <td>Dados técnicos (IP, cookies)</td>
+                <td>Análise e segurança</td>
+                <td><span class="field-placeholder">[EX.: até 12 meses]</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ==================== SEÇÃO 22 ==================== -->
+    <h2>22. ELIMINAÇÃO DOS DADOS</h2>
+    <p>Após o término do período de retenção, os dados serão eliminados de forma segura, anonimizados ou mantidos apenas para cumprimento de obrigações legais, regulatórias ou para exercício regular de direitos, quando aplicável.</p>
+    <p>O titular pode solicitar a eliminação de seus dados a qualquer momento, mas a profissional poderá manter dados que sejam necessários para cumprir obrigações legais ou para defesa em processos, nos termos da lei.</p>
+
+    <!-- ==================== SEÇÃO 23 ==================== -->
+    <h2>23. DIREITOS DO TITULAR</h2>
+    <p>A LGPD garante ao titular dos dados pessoais os seguintes direitos, que podem ser exercidos a qualquer momento:</p>
+    <ul>
+        <li><strong>Confirmação da existência de tratamento</strong> – saber se seus dados são tratados pela profissional;</li>
+        <li><strong>Acesso</strong> – obter informações sobre o tratamento e uma cópia dos dados;</li>
+        <li><strong>Correção</strong> – retificar dados incompletos, inexatos ou desatualizados;</li>
+        <li><strong>Anonimização, bloqueio ou eliminação</strong> – solicitar a eliminação de dados desnecessários, excessivos ou tratados em desconformidade;</li>
+        <li><strong>Portabilidade</strong> – receber seus dados em formato estruturado e interoperável, quando tecnicamente possível;</li>
+        <li><strong>Informação sobre compartilhamento</strong> – saber com quem os dados foram compartilhados;</li>
+        <li><strong>Informação sobre a possibilidade de não fornecer consentimento</strong> – e sobre as consequências;</li>
+        <li><strong>Revogação do consentimento</strong> – nas hipóteses em que o tratamento se baseia em consentimento;</li>
+        <li><strong>Oposição</strong> – opor-se a tratamento baseado em legítimo interesse, quando não forem atendidos os motivos legítimos do titular;</li>
+        <li><strong>Revisão de decisões automatizadas</strong> – solicitar revisão de decisões tomadas exclusivamente com base em tratamento automatizado, quando aplicável.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 24 ==================== -->
+    <h2>24. COMO EXERCER OS DIREITOS</h2>
+    <p>Para exercer os direitos previstos nesta Política, o titular deve entrar em contato por meio do canal de privacidade indicado na seção 35, informando o que deseja e anexando os documentos necessários para comprovação de identidade, quando solicitado.</p>
+    <p>A profissional analisará a solicitação e responderá dentro do prazo legal, fornecendo as informações ou adotando as providências cabíveis. Em alguns casos, poderá ser solicitada a confirmação da identidade para proteger os dados contra acessos indevidos.</p>
+
+    <!-- ==================== SEÇÃO 25 ==================== -->
+    <h2>25. ENCARREGADO PELO TRATAMENTO DE DADOS</h2>
+    <p>A profissional poderá designar um encarregado (DPO – Data Protection Officer) para atuar como canal de comunicação com os titulares e com a ANPD. Caso não haja encarregado formalmente designado, o contato para questões de privacidade será a própria profissional.</p>
+    <p><strong>Nome do encarregado (se aplicável):</strong> <span class="field-placeholder">[NOME DO ENCARREGADO]</span></p>
+    <p><strong>E-mail do encarregado:</strong> <span class="field-placeholder">[E-MAIL]</span></p>
+    <p><strong>Canal para contato:</strong> <span class="field-placeholder">[CANAL]</span></p>
+
+    <!-- ==================== SEÇÃO 26 ==================== -->
+    <h2>26. CONFIDENCIALIDADE</h2>
+    <p>A profissional e seus colaboradores (quando houver) comprometem-se a manter sigilo absoluto sobre todas as informações pessoais e de saúde a que tenham acesso no exercício da atividade profissional, em conformidade com o Código de Ética e de Conduta do Nutricionista e com a legislação aplicável.</p>
+
+    <!-- ==================== SEÇÃO 27 ==================== -->
+    <h2>27. PRONTUÁRIOS E REGISTROS PROFISSIONAIS</h2>
+    <p>Os registros relacionados ao atendimento (prontuários, fichas de evolução, planos alimentares, etc.) são mantidos para:</p>
+    <ul>
+        <li>Garantir a continuidade do atendimento;</li>
+        <li>Cumprir obrigações profissionais e éticas;</li>
+        <li>Atender a exigências legais e regulatórias;</li>
+        <li>Possibilitar o exercício regular de direitos.</li>
+    </ul>
+    <p>O prazo de guarda desses documentos segue as determinações do Conselho Federal de Nutricionistas e da legislação pertinente, sendo a profissional responsável por sua guarda segura e sigilosa.</p>
+
+    <!-- ==================== SEÇÃO 28 ==================== -->
+    <h2>28. PAGAMENTOS</h2>
+    <p>Para processamento de pagamentos, a profissional poderá utilizar plataformas especializadas (ex.: provedor de cartão, PIX, boleto). Os dados financeiros fornecidos durante a transação são tratados diretamente por essas plataformas, que possuem suas próprias políticas de privacidade e segurança.</p>
+    <p><strong>Provedor de pagamento:</strong> <span class="field-placeholder">[EMPRESA]</span></p>
+    <p><strong>Meios de pagamento aceitos:</strong> <span class="field-placeholder">[PIX/CARTÃO/BOLETO/OUTROS]</span></p>
+    <p>A profissional não armazena dados completos de cartões de crédito ou informações financeiras sensíveis, a menos que seja estritamente necessário e com fundamento legal.</p>
+
+    <!-- ==================== SEÇÃO 29 ==================== -->
+    <h2>29. LINKS PARA OUTROS SITES</h2>
+    <p>O site pode conter links para serviços de terceiros, como Instagram, WhatsApp, Google Maps, plataformas de pagamento e agendamento. Esses sites possuem suas próprias políticas de privacidade, e a profissional não se responsabiliza pelo conteúdo ou pelo tratamento de dados realizado por eles.</p>
+    <p>Recomenda-se que o usuário leia atentamente as políticas de privacidade desses serviços antes de fornecer quaisquer dados.</p>
+
+    <!-- ==================== SEÇÃO 30 ==================== -->
+    <h2>30. REDES SOCIAIS</h2>
+    <p>A profissional mantém perfis em redes sociais como Instagram, Facebook, etc. A interação com esses perfis (curtidas, comentários, mensagens) está sujeita às políticas de privacidade dessas plataformas. A profissional não coleta dados das redes sociais automaticamente, a menos que o usuário os forneça por meio de mensagem ou formulário.</p>
+
+    <!-- ==================== SEÇÃO 31 ==================== -->
+    <h2>31. CONTEÚDO E COMENTÁRIOS</h2>
+    <p>Atualmente, o site não possui funcionalidade de comentários públicos ou fóruns. Caso isso venha a existir, os dados fornecidos serão tratados de acordo com esta Política, e os usuários serão informados previamente.</p>
+    <p><em>Seção adaptável conforme a existência de comentários ou fóruns.</em></p>
+
+    <!-- ==================== SEÇÃO 32 ==================== -->
+    <h2>32. DADOS FORNECIDOS VOLUNTARIAMENTE</h2>
+    <p>O usuário pode fornecer informações voluntariamente por meio de formulários, e-mails, WhatsApp ou mensagens. Ao fazê-lo, o usuário autoriza a profissional a tratar essas informações para a finalidade específica para a qual foram enviadas, observadas as bases legais aplicáveis.</p>
+    <p>Recomenda-se evitar o envio de dados pessoais sensíveis por canais não seguros ou desnecessários.</p>
+
+    <!-- ==================== SEÇÃO 33 ==================== -->
+    <h2>33. RESPONSABILIDADE DO TITULAR</h2>
+    <p>O titular é responsável por fornecer informações verdadeiras, completas e atualizadas quando necessário para o atendimento ou para o exercício de seus direitos. A profissional não se responsabiliza por erros ou danos decorrentes de informações incorretas fornecidas pelo titular.</p>
+
+    <!-- ==================== SEÇÃO 34 ==================== -->
+    <h2>34. ALTERAÇÕES DA POLÍTICA</h2>
+    <p>Esta Política de Privacidade poderá ser atualizada periodicamente para refletir mudanças legais, novas práticas de tratamento, alterações no site ou inclusão de novas ferramentas. A versão mais recente será sempre publicada nesta página, com a data de atualização destacada.</p>
+    <p><strong>Versão:</strong> <span class="field-placeholder">[VERSÃO]</span></p>
+    <p><strong>Data de publicação:</strong> <span class="field-placeholder">[DATA]</span></p>
+    <p><strong>Última atualização:</strong> <span class="field-placeholder">[DATA]</span></p>
+    <p>Recomenda-se que o usuário consulte esta página periodicamente.</p>
+
+    <!-- ==================== SEÇÃO 35 ==================== -->
+    <h2>35. CANAL DE CONTATO</h2>
+    <p>Para dúvidas, solicitações relacionadas a dados pessoais, exercício de direitos, reclamações ou demais assuntos relacionados à privacidade, o titular pode contatar:</p>
+    <ul>
+        <li><strong>Nome:</strong> <span class="field-placeholder">[NOME]</span></li>
+        <li><strong>E-mail:</strong> <span class="field-placeholder">[E-MAIL]</span></li>
+        <li><strong>Telefone/WhatsApp:</strong> <span class="field-placeholder">[TELEFONE]</span></li>
+        <li><strong>Endereço:</strong> <span class="field-placeholder">[ENDEREÇO]</span></li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 36 ==================== -->
+    <h2>36. AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS</h2>
+    <p>A Autoridade Nacional de Proteção de Dados (ANPD) é o órgão público responsável por fiscalizar e aplicar a LGPD no Brasil. Caso o titular entenda que seus direitos não estão sendo respeitados, poderá apresentar reclamação à ANPD, após contatar a profissional.</p>
+    <p>Mais informações sobre a ANPD podem ser obtidas no site oficial: <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">www.gov.br/anpd</a>.</p>
+
+    <!-- ==================== SEÇÃO 37 ==================== -->
+    <h2>37. LEGISLAÇÃO APLICÁVEL</h2>
+    <p>Esta Política de Privacidade é regida pela legislação brasileira, em especial pela Lei nº 13.709/2018 (LGPD), pelo Código de Defesa do Consumidor, pelo Código Civil, e pelas normas profissionais do Conselho Federal de Nutricionistas.</p>
+
+    <!-- ==================== SEÇÃO 38 ==================== -->
+    <h2>38. RELAÇÃO COM OS TERMOS DE USO</h2>
+    <p>Esta Política de Privacidade complementa os Termos de Uso do site, que tratam das regras gerais de utilização do site e contratação dos serviços. Ambos os documentos devem ser lidos em conjunto, pois possuem finalidades distintas:</p>
+    <ul>
+        <li><strong>Termos de Uso</strong> – regulam as condições de acesso e uso do site, contratação e prestação de serviços;</li>
+        <li><strong>Política de Privacidade</strong> – detalha como os dados pessoais são tratados, protegidos e compartilhados.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 39 ==================== -->
+    <h2>39. DECLARAÇÃO DE TRANSPARÊNCIA</h2>
+    <p>A profissional declara seu compromisso com a transparência, a privacidade, a segurança e a proteção de dados pessoais, respeitando os direitos dos titulares e atuando de boa-fé em todas as atividades de tratamento.</p>
+    <p>Esta Política reflete esse compromisso, oferecendo informações claras e acessíveis sobre o tratamento de dados realizado.</p>
+
+    <!-- ==================== SEÇÃO 40 ==================== -->
+    <h2>40. TABELA-RESUMO DE TRATAMENTO</h2>
+    <p>A tabela abaixo resume as principais categorias de dados, finalidades, bases legais, compartilhamentos e prazos de retenção. Os campos entre colchetes devem ser preenchidos conforme a realidade da profissional.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dados</th>
+                <th>Finalidade</th>
+                <th>Base legal</th>
+                <th>Compartilhamento</th>
+                <th>Retenção</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nome, CPF, e-mail, telefone</td>
+                <td><span class="field-placeholder">[EX.: identificação e contato]</span></td>
+                <td><span class="field-placeholder">[EX.: execução contratual]</span></td>
+                <td><span class="field-placeholder">[EX.: plataforma de agendamento]</span></td>
+                <td><span class="field-placeholder">[EX.: duração do contrato + 5 anos]</span></td>
+            </tr>
+            <tr>
+                <td>Dados de saúde (prontuário)</td>
+                <td><span class="field-placeholder">[Atendimento nutricional]</span></td>
+                <td><span class="field-placeholder">[EX.: obrigação legal/consentimento]</span></td>
+                <td><span class="field-placeholder">[Não compartilhado, salvo com autorização]</span></td>
+                <td><span class="field-placeholder">[Conforme normas do CRN]</span></td>
+            </tr>
+            <tr>
+                <td>Dados de pagamento</td>
+                <td><span class="field-placeholder">[Processamento financeiro]</span></td>
+                <td><span class="field-placeholder">[Execução contratual]</span></td>
+                <td><span class="field-placeholder">[Plataforma de pagamento]</span></td>
+                <td><span class="field-placeholder">[Período necessário para fins fiscais]</span></td>
+            </tr>
+            <tr>
+                <td>Dados técnicos/cookies</td>
+                <td><span class="field-placeholder">[Análise e melhoria]</span></td>
+                <td><span class="field-placeholder">[Legítimo interesse ou consentimento]</span></td>
+                <td><span class="field-placeholder">[Google Analytics, se utilizado]</span></td>
+                <td><span class="field-placeholder">[Até 12 meses]</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+ 
+
+
+
+    <!-- ==================== ACEITE ==================== -->
+    <div style="background:#f9f9f9; padding:1.5rem; border-radius:12px; text-align:center; margin:2rem 0;">
+        <p style="font-weight:600; font-size:1.1rem; margin-bottom:0.5rem;">📄 Li e concordo com a Política de Privacidade e Proteção de Dados Pessoais.</p>
+        <button id="acceptBtn" class="btn-accept">✅ Concordo e aceito</button>
+        <div id="feedback" class="acceptance-message"></div>
+    </div>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <div class="footer-note">
+        <p style="text-align:center; font-size:0.9rem; color:#4e6b7a;">
+            © <span class="field-placeholder">[ANO]</span> <span class="field-placeholder">[NOME PROFISSIONAL]</span> – Todos os direitos reservados.
+        </p>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('acceptBtn');
+        const feedback = document.getElementById('feedback');
+
+        btn.addEventListener('click', function() {
+            feedback.innerHTML = '✔️ Seu aceite foi registrado. Obrigado por ler a Política de Privacidade.';
+            feedback.style.color = '#1e6b5e';
+            btn.disabled = true;
+            btn.textContent = '✅ Aceito';
+            btn.style.background = '#4a7a6e';
+        });
+    });
+</script>
+</body>
+</html>

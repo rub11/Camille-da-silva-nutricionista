@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Responsabilidade Profissional e Uso de Informações</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #1e2a3a;
+            padding: 2rem 1rem;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.5rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #0b2b44;
+            border-bottom: 4px solid #b85c3a;
+            padding-bottom: 0.6rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #1a4b5e;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+            border-left: 6px solid #b85c3a;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #1f5a6b;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 0.8rem 0 1.2rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight-box {
+            background: #fef6f0;
+            padding: 1.2rem 1.8rem;
+            border-radius: 10px;
+            border-left: 5px solid #b85c3a;
+            margin: 1.5rem 0;
+        }
+
+        .field-placeholder {
+            background: #eef2f7;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+            color: #0b3b4a;
+            border: 1px dashed #3a7a8a;
+        }
+
+        .btn-accept {
+            display: block;
+            width: 100%;
+            max-width: 450px;
+            margin: 3rem auto 1.5rem;
+            padding: 1rem 2rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            background: #b85c3a;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 4px 12px rgba(184, 92, 58, 0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-accept:hover {
+            background: #9e4a2e;
+        }
+
+        .btn-accept:active {
+            transform: scale(0.97);
+        }
+
+        .btn-accept:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .acceptance-message {
+            text-align: center;
+            font-size: 1rem;
+            color: #b85c3a;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            min-height: 2.5rem;
+        }
+
+        .footer-note {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #dce5ed;
+            font-size: 0.95rem;
+            color: #3a4f5e;
+        }
+
+        .legal-warning {
+            background: #fff6e5;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            border: 1px solid #f0c78a;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .legal-warning strong {
+            color: #8a5a1a;
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.2rem 1.5rem;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .checklist-grid li {
+            margin-bottom: 0.3rem;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            ul, ol {
+                margin-left: 1.2rem;
+            }
+            .checklist-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            .btn-accept {
+                display: none;
+            }
+            .acceptance-message {
+                display: none;
+            }
+            body {
+                background: #fff;
+                padding: 0.5in;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>AVISO DE RESPONSABILIDADE PROFISSIONAL E USO DE INFORMAÇÕES</h1>
+    <p style="text-align:center; color:#3f5a6b; font-weight:500;">Versão 1.0 – Última atualização: <span class="field-placeholder">[DATA]</span></p>
+
+    <!-- ==================== SEÇÃO 1 ==================== -->
+    <h2>1. OBJETIVO DO AVISO</h2>
+    <p>Este Aviso de Responsabilidade Profissional e Uso de Informações tem como objetivo esclarecer a finalidade das informações disponibilizadas no site <span class="field-placeholder">[DOMÍNIO]</span>, bem como estabelecer de forma transparente os limites de sua utilização.</p>
+    <p>A profissional nutricionista <span class="field-placeholder">[NOME PROFISSIONAL]</span> busca, por meio deste documento, informar pacientes, visitantes e usuários sobre o caráter educativo e informativo dos conteúdos, a necessidade de avaliação individualizada, e os limites da atuação profissional, sempre em conformidade com a legislação brasileira, o Código de Ética e de Conduta do Nutricionista e as normas do Conselho Federal e Regional de Nutricionistas.</p>
+    <p>A transparência e a segurança são valores fundamentais, e este aviso visa proteger tanto a profissional quanto os usuários, sem criar falsas expectativas ou tentar excluir responsabilidades que não podem ser afastadas pela lei.</p>
+
+    <!-- ==================== SEÇÃO 2 ==================== -->
+    <h2>2. IDENTIFICAÇÃO DA PROFISSIONAL</h2>
+    <p>A responsável pelo site e pelos serviços de nutrição é a profissional abaixo identificada:</p>
+    <ul>
+        <li><strong>Nome completo:</strong> <span class="field-placeholder">[NOME COMPLETO]</span></li>
+        <li><strong>Nome profissional:</strong> <span class="field-placeholder">[NOME PROFISSIONAL]</span></li>
+        <li><strong>CRN:</strong> <span class="field-placeholder">[NÚMERO DO CRN]</span></li>
+        <li><strong>CPF/CNPJ:</strong> <span class="field-placeholder">[CPF OU CNPJ]</span></li>
+        <li><strong>Endereço profissional:</strong> <span class="field-placeholder">[ENDEREÇO]</span></li>
+        <li><strong>E-mail:</strong> <span class="field-placeholder">[E-MAIL]</span></li>
+        <li><strong>Telefone/WhatsApp:</strong> <span class="field-placeholder">[TELEFONE]</span></li>
+        <li><strong>Cidade/UF:</strong> <span class="field-placeholder">[CIDADE - UF]</span></li>
+        <li><strong>Site:</strong> <span class="field-placeholder">[DOMÍNIO]</span></li>
+    </ul>
+    <p>A profissional atua estritamente dentro das atribuições legalmente permitidas à profissão de nutricionista, respeitando a Lei nº 8.234/1991, o Código de Ética e de Conduta do Nutricionista e as demais normas dos conselhos de classe.</p>
+
+    <!-- ==================== SEÇÃO 3 ==================== -->
+    <h2>3. NATUREZA INFORMATIVA DO SITE</h2>
+    <p>O site <span class="field-placeholder">[DOMÍNIO]</span> possui finalidade institucional, educativa, informativa e de divulgação profissional. Seus conteúdos incluem, entre outros:</p>
+    <ul>
+        <li>Artigos e textos sobre nutrição e alimentação saudável;</li>
+        <li>Vídeos educativos e dicas práticas;</li>
+        <li>Receitas e sugestões de cardápios;</li>
+        <li>Publicações sobre temas relacionados à saúde e bem-estar;</li>
+        <li>Informações gerais sobre os serviços oferecidos;</li>
+        <li>Materiais de educação alimentar e nutricional;</li>
+        <li>Perguntas frequentes e orientações gerais.</li>
+    </ul>
+    <p>Todo o conteúdo disponibilizado tem caráter <strong>informativo e educativo</strong>, e não constitui, por si só, consulta nutricional, avaliação individualizada, diagnóstico ou prescrição personalizada. A profissional emprega seus melhores esforços para garantir que as informações sejam precisas e atualizadas, mas a utilização desses materiais é de inteira responsabilidade do usuário.</p>
+
+    <!-- ==================== SEÇÃO 4 ==================== -->
+    <h2>4. CONTEÚDO NÃO SUBSTITUI CONSULTA</h2>
+    <p><strong>Nenhum conteúdo disponibilizado neste site substitui a consulta nutricional individualizada.</strong></p>
+    <p>Artigos, textos, vídeos, receitas, dicas, imagens, materiais educativos, publicações, perguntas frequentes e demais informações são de caráter geral e não consideram as particularidades de cada pessoa.</p>
+    <p>Cada indivíduo possui características, necessidades, condições de saúde, preferências e objetivos diferentes. O que funciona para uma pessoa pode não ser adequado para outra, e orientações genéricas podem ser insuficientes ou até mesmo inadequadas para determinadas situações.</p>
+    <p>Portanto, <strong>as informações do site não devem ser utilizadas para automedicar-se, autodiagnosticar-se, modificar tratamentos médicos ou tomar decisões importantes relacionadas à saúde sem o devido acompanhamento profissional</strong>.</p>
+
+    <!-- ==================== SEÇÃO 5 ==================== -->
+    <h2>5. AVALIAÇÃO INDIVIDUALIZADA</h2>
+    <p>A orientação nutricional personalizada depende de uma avaliação profissional que considera múltiplos fatores, tais como:</p>
+    <ul>
+        <li>Histórico de saúde e doenças preexistentes;</li>
+        <li>Rotina diária e hábitos de vida;</li>
+        <li>Alimentação atual e preferências alimentares;</li>
+        <li>Objetivos individuais (emagrecimento, ganho de massa, melhora de saúde, etc.);</li>
+        <li>Idade, sexo e estágio de vida (gestação, amamentação, menopausa, etc.);</li>
+        <li>Condições de saúde atuais (doenças crônicas, alergias, intolerâncias);</li>
+        <li>Medicamentos e suplementos em uso;</li>
+        <li>Exames laboratoriais e de imagem;</li>
+        <li>Atividade física e nível de estresse;</li>
+        <li>Fatores psicológicos e emocionais;</li>
+        <li>Outras informações relevantes fornecidas pelo paciente.</li>
+    </ul>
+    <p>Somente com base nessa análise criteriosa é possível elaborar um plano alimentar seguro, eficaz e adequado à realidade de cada pessoa. Por isso, <strong>consultas e avaliações individuais são indispensáveis</strong> para qualquer conduta nutricional.</p>
+
+    <!-- ==================== SEÇÃO 6 ==================== -->
+    <h2>6. AUSÊNCIA DE GARANTIA DE RESULTADOS</h2>
+    <p>A profissional não pode e não promete qualquer resultado específico como consequência do acompanhamento nutricional. Resultados dependem de uma série de fatores, muitos dos quais estão além do controle da profissional.</p>
+    <p><strong>Não são feitas promessas de:</strong></p>
+    <ul>
+        <li>Emagrecimento de uma quantidade específica de quilos em determinado prazo;</li>
+        <li>Redução de percentual de gordura corporal garantida;</li>
+        <li>Ganho de massa muscular com valores pré-determinados;</li>
+        <li>Cura de doenças ou condições de saúde;</li>
+        <li>Melhora de sintomas de forma assegurada;</li>
+        <li>Resultados estéticos específicos;</li>
+        <li>Desempenho físico ou esportivo garantido;</li>
+        <li>Qualquer outro benefício com prazo ou intensidade pré-estabelecidos.</li>
+    </ul>
+    <p>Os resultados variam de pessoa para pessoa e dependem de adesão às orientações, características genéticas, metabolismo, prática de atividades físicas, qualidade do sono, gerenciamento do estresse, condições emocionais, entre outros aspectos individuais. A profissional atua com ética e responsabilidade, oferecendo o melhor suporte técnico, mas não pode controlar todos os fatores que influenciam os resultados.</p>
+
+    <!-- ==================== SEÇÃO 7 ==================== -->
+    <h2>7. RESPONSABILIDADE SOBRE AS INFORMAÇÕES FORNECIDAS PELO PACIENTE</h2>
+    <p>O paciente é o responsável por fornecer à profissional informações verdadeiras, completas, atualizadas e relevantes para o atendimento.</p>
+    <p>São exemplos de informações essenciais que devem ser comunicadas com exatidão:</p>
+    <ul>
+        <li>Doenças preexistentes e condições crônicas;</li>
+        <li>Alergias, intolerâncias e hipersensibilidades alimentares;</li>
+        <li>Medicamentos em uso (incluindo doses e frequência);</li>
+        <li>Suplementos nutricionais consumidos;</li>
+        <li>Gestacão, amamentação ou planejamento de gravidez;</li>
+        <li>Exames laboratoriais e de imagem recentes;</li>
+        <li>Sintomas ou queixas atuais;</li>
+        <li>Tratamentos médicos em andamento;</li>
+        <li>Mudanças significativas no estado de saúde;</li>
+        <li>Intervenções cirúrgicas realizadas;</li>
+        <li>Hábitos alimentares e rotina.</li>
+    </ul>
+    <p>A omissão, imprecisão ou falsidade dessas informações pode prejudicar a avaliação profissional, comprometer o plano alimentar e gerar riscos à saúde do paciente. A profissional não se responsabiliza por orientações baseadas em dados incorretos fornecidos pelo paciente.</p>
+
+    <!-- ==================== SEÇÃO 8 ==================== -->
+    <h2>8. RESPONSABILIDADE DA PROFISSIONAL</h2>
+    <p>A profissional nutricionista exerce sua atividade dentro dos limites de suas competências, da legislação aplicável, das normas profissionais e dos princípios éticos que regem a profissão.</p>
+    <p>A responsabilidade da profissional será analisada caso a caso, considerando as circunstâncias concretas de cada atendimento, as informações disponíveis no momento, a conduta profissional adotada, e as obrigações legais e regulatórias incidentes.</p>
+    <p><strong>A profissional não está isenta de responsabilidade</strong>, mas sua responsabilidade é subjetiva, baseada em culpa ou dolo, e não se configura por mera insatisfação do paciente com os resultados obtidos, desde que tenha atuado com a diligência e o zelo esperados de um profissional de sua área.</p>
+    <p>A profissional responde por seus atos nos termos do Código Civil, do Código de Defesa do Consumidor, da LGPD e demais normas aplicáveis, sempre respeitando os limites de sua atuação profissional.</p>
+
+    <!-- ==================== SEÇÃO 9 ==================== -->
+    <h2>9. LIMITES DA ATUAÇÃO NUTRICIONAL</h2>
+    <p>A nutricionista atua dentro das atribuições legalmente permitidas à profissão, conforme Lei nº 8.234/1991. Não exerce atividades privativas de outras categorias profissionais.</p>
+    <p>Em determinadas situações, o paciente pode necessitar da avaliação ou acompanhamento de outros profissionais habilitados, tais como:</p>
+    <ul>
+        <li>Médicos (clínico geral, endocrinologista, gastroenterologista, psiquiatra, etc.);</li>
+        <li>Psicólogos ou terapeutas;</li>
+        <li>Profissionais de educação física;</li>
+        <li>Farmacêuticos;</li>
+        <li>Fisioterapeutas;</li>
+        <li>Nutrólogos;</li>
+        <li>Outros especialistas, conforme a necessidade.</li>
+    </ul>
+    <p>A profissional poderá recomendar ou sugerir a busca por esses profissionais quando julgar necessário para a saúde e segurança do paciente, mas não substitui suas atuações.</p>
+
+    <!-- ==================== SEÇÃO 10 ==================== -->
+    <h2>10. CONDIÇÕES DE SAÚDE</h2>
+    <p>As informações disponibilizadas no site não devem ser utilizadas para autodiagnóstico ou automedicação. O usuário não deve interpretar os conteúdos como substitutos de uma avaliação médica ou nutricional presencial.</p>
+    <p><strong>Não incentive o paciente a modificar medicamentos, tratamentos, doses, terapias ou condutas médicas com base exclusivamente no conteúdo do site.</strong> Qualquer alteração em medicamentos ou tratamentos deve ser feita exclusivamente sob orientação do médico assistente.</p>
+
+    <!-- ==================== SEÇÃO 11 ==================== -->
+    <h2>11. MEDICAMENTOS E SUPLEMENTOS</h2>
+    <p>Conteúdos publicados no site podem mencionar suplementos alimentares, vitaminas, minerais ou outros compostos. Essas menções têm caráter educativo e não constituem prescrição, recomendação ou autorização para seu uso.</p>
+    <p>O uso de suplementos deve ser avaliado individualmente, considerando necessidades nutricionais, condições de saúde e possíveis interações com medicamentos. <strong>A indicação de suplementos só deve ser feita por profissional habilitado, após avaliação adequada.</strong></p>
+    <p>Nenhuma informação do site deve ser interpretada como autorização para iniciar, interromper ou alterar medicamentos prescritos por médicos.</p>
+
+    <!-- ==================== SEÇÃO 12 ==================== -->
+    <h2>12. EXAMES LABORATORIAIS</h2>
+    <p>Informações sobre exames laboratoriais publicadas no site possuem caráter educativo e geral. A interpretação de resultados de exames deve ser feita por profissional de saúde qualificado, considerando o histórico clínico do paciente.</p>
+    <p><strong>Não se deve modificar tratamentos ou condutas com base exclusivamente em conteúdos do site</strong>, sem a devida análise profissional. A profissional pode orientar sobre a necessidade de exames, mas a interpretação final é de responsabilidade do médico ou do profissional que os solicitou.</p>
+
+    <!-- ==================== SEÇÃO 13 ==================== -->
+    <h2>13. URGÊNCIAS E EMERGÊNCIAS</h2>
+    <div class="highlight-box">
+        <p><strong>O site, e-mail, WhatsApp, redes sociais e demais canais de comunicação da nutricionista NÃO constituem serviço de emergência.</strong></p>
+        <p>Em situações de emergência ou risco iminente à vida ou à saúde, a pessoa deve <strong>procurar imediatamente o serviço de atendimento de urgência mais próximo</strong> (como UPA, Pronto-Socorro, SAMU – 192) ou seu médico assistente.</p>
+        <p>Nenhuma mensagem enviada por qualquer canal digital será considerada como atendimento de urgência. A profissional não se responsabiliza por danos decorrentes da demora ou impossibilidade de resposta em situações de emergência.</p>
+    </div>
+
+    <!-- ==================== SEÇÃO 14 ==================== -->
+    <h2>14. COMUNICAÇÃO POR WHATSAPP</h2>
+    <p>O WhatsApp poderá ser utilizado para comunicação administrativa e de agendamento, tais como:</p>
+    <ul>
+        <li>Confirmação de consultas e retornos;</li>
+        <li>Reagendamentos e cancelamentos;</li>
+        <li>Envio de lembretes e informações logísticas;</li>
+        <li>Esclarecimento de dúvidas administrativas;</li>
+        <li>Encaminhamento de orientações complementares, quando acordado.</li>
+    </ul>
+    <p>O WhatsApp <strong>não deve ser utilizado para relatar sintomas agudos, emergências ou para solicitar atendimento urgente</strong>. A profissional poderá não responder imediatamente a mensagens, e o canal não garante disponibilidade 24 horas.</p>
+
+    <!-- ==================== SEÇÃO 15 ==================== -->
+    <h2>15. ATENDIMENTO ONLINE</h2>
+    <p>O teleatendimento (consultas por videoconferência) é uma modalidade de atendimento que, embora eficaz, apresenta limitações próprias.</p>
+    <p>O paciente deve estar ciente de que:</p>
+    <ul>
+        <li>A qualidade da consulta depende de conexão estável com a internet e de dispositivos adequados;</li>
+        <li>Falhas técnicas podem ocorrer e, nesses casos, a profissional e o paciente combinarão um novo horário, sem custo adicional;</li>
+        <li>O paciente deve dispor de ambiente privado e silencioso para preservar sua intimidade e a confidencialidade da consulta;</li>
+        <li>O atendimento online seguirá as normas profissionais e legais aplicáveis ao teleatendimento em nutrição;</li>
+        <li>Algumas avaliações (como medidas antropométricas precisas) podem ter limitações no formato remoto, sendo recomendada a complementação presencial quando possível.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 16 ==================== -->
+    <h2>16. CONTEÚDOS DE TERCEIROS</h2>
+    <p>O site pode conter links ou referências a sites, artigos, estudos, ferramentas, redes sociais e outras plataformas de terceiros. A inclusão desses links não significa endosso, garantia ou responsabilidade da profissional sobre o conteúdo, a precisão ou a segurança desses recursos externos.</p>
+    <p>O usuário deve acessar tais conteúdos por sua própria conta e risco, e recomenda-se a leitura das políticas de privacidade e termos de uso de cada serviço de terceiros.</p>
+
+    <!-- ==================== SEÇÃO 17 ==================== -->
+    <h2>17. ATUALIZAÇÃO DAS INFORMAÇÕES</h2>
+    <p>A profissional busca manter o conteúdo do site atualizado e alinhado com as melhores evidências científicas disponíveis. No entanto, a nutrição é uma área em constante evolução, e as informações podem se tornar desatualizadas ao longo do tempo.</p>
+    <p>Além disso, podem ocorrer alterações nos serviços, na legislação, nas normas profissionais e nas práticas clínicas, o que pode exigir a revisão e atualização dos conteúdos. A profissional se reserva o direito de modificar, complementar ou remover informações a qualquer momento, sem aviso prévio individual.</p>
+
+    <!-- ==================== SEÇÃO 18 ==================== -->
+    <h2>18. ERROS OU OMISSÕES</h2>
+    <p>Apesar dos cuidados na elaboração e revisão do conteúdo, podem eventualmente existir erros de digitação, informações desatualizadas, links indisponíveis, erros técnicos ou omissões involuntárias.</p>
+    <p>A profissional se compromete a corrigir tais erros assim que identificados, e agradece a colaboração dos usuários que reportarem eventuais imprecisões. No entanto, a simples existência de erros ou omissões não implica, por si só, responsabilidade profissional, salvo se comprovada negligência grave.</p>
+
+    <!-- ==================== SEÇÃO 19 ==================== -->
+    <h2>19. DEPOIMENTOS E EXPERIÊNCIAS INDIVIDUAIS</h2>
+    <p>Depoimentos, relatos e experiências de pacientes eventualmente publicados no site ou em redes sociais representam a opinião e a vivência pessoal daqueles indivíduos. Esses depoimentos não devem ser interpretados como garantia de que outros pacientes terão os mesmos resultados.</p>
+    <p>Cada pessoa responde de maneira única ao acompanhamento nutricional, e fatores individuais podem influenciar os desfechos.</p>
+
+    <!-- ==================== SEÇÃO 20 ==================== -->
+    <h2>20. FOTOGRAFIAS E ANTES E DEPOIS</h2>
+    <p>Caso o site apresente imagens de antes e depois, fotografias ou materiais visuais de pacientes, estes serão utilizados apenas com autorização expressa e específica do titular, observando as regras éticas e legais aplicáveis, incluindo a LGPD e o Código de Ética do Nutricionista.</p>
+    <p>Os resultados mostrados nessas imagens são individuais e não representam uma promessa ou garantia de resultados futuros para outros pacientes. A profissional não utiliza imagens que possam gerar expectativas irreais ou promessas enganosas.</p>
+
+    <!-- ==================== SEÇÃO 21 ==================== -->
+    <h2>21. PUBLICIDADE PROFISSIONAL</h2>
+    <p>A divulgação profissional da nutricionista, incluindo o conteúdo do site, obedece às normas éticas e regulamentares da profissão, especialmente as Resoluções do Conselho Federal de Nutricionistas que disciplinam a publicidade e a propaganda.</p>
+    <p>A profissional evita:</p>
+    <ul>
+        <li>Promessas enganosas ou exageradas;</li>
+        <li>Afirmações de resultados garantidos;</li>
+        <li>Comparações desleais com outros profissionais;</li>
+        <li>Utilização de termos ou títulos não reconhecidos pela legislação;</li>
+        <li>Qualquer prática que possa induzir o público a erro.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 22 ==================== -->
+    <h2>22. PUBLICAÇÕES EM REDES SOCIAIS</h2>
+    <p>Conteúdos publicados em perfis profissionais em redes sociais (Instagram, Facebook, TikTok, YouTube, etc.) também possuem caráter educativo e informativo, salvo quando explicitamente indicado como conteúdo promocional ou publicitário.</p>
+    <p>As mesmas limitações e ressalvas deste Aviso aplicam-se às publicações em redes sociais: elas não substituem consulta individualizada e não garantem resultados. A interação em redes sociais não estabelece vínculo profissional, e dúvidas específicas devem ser tratadas em consulta particular.</p>
+
+    <!-- ==================== SEÇÃO 23 ==================== -->
+    <h2>23. RESPONSABILIDADE DO USUÁRIO</h2>
+    <p>Ao utilizar este site e seus conteúdos, o usuário assume a responsabilidade por:</p>
+    <ul>
+        <li>Utilizar as informações de forma consciente, responsável e crítica;</li>
+        <li>Buscar avaliação profissional presencial ou online sempre que necessário;</li>
+        <li>Não realizar autodiagnóstico ou automedicação com base nos conteúdos;</li>
+        <li>Não modificar tratamentos médicos ou nutricionais sem orientação adequada;</li>
+        <li>Fornecer informações verdadeiras e completas durante as consultas;</li>
+        <li>Procurar atendimento de urgência em situações de emergência;</li>
+        <li>Ler e compreender os Termos de Uso e a Política de Privacidade do site.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 24 ==================== -->
+    <h2>24. RESPONSABILIDADE POR DECISÕES TOMADAS SEM AVALIAÇÃO</h2>
+    <p>Qualquer decisão relacionada à saúde, alimentação, medicamentos ou tratamentos tomada com base exclusiva em informações gerais disponíveis neste site é de inteira responsabilidade do usuário.</p>
+    <p>A profissional não se responsabiliza por consequências adversas decorrentes da aplicação inadequada ou equivocada de conteúdos informativos, especialmente quando não houve avaliação individualizada e acompanhamento profissional.</p>
+
+    <!-- ==================== SEÇÃO 25 ==================== -->
+    <h2>25. RESULTADOS E ADESÃO</h2>
+    <p>O sucesso do acompanhamento nutricional depende, em grande medida, da adesão do paciente às orientações recebidas. Fatores como:</p>
+    <ul>
+        <li>Características genéticas e metabólicas;</li>
+        <li>Grau de adesão ao plano alimentar;</li>
+        <li>Rotina e disciplina;</li>
+        <li>Prática regular de atividade física;</li>
+        <li>Qualidade e quantidade do sono;</li>
+        <li>Níveis de estresse e saúde emocional;</li>
+        <li>Condições de saúde subjacentes;</li>
+        <li>Uso de medicamentos;</li>
+        <li>Fatores ambientais e sociais;</li>
+        <li>Outros hábitos de vida.</li>
+    </ul>
+    <p>podem influenciar significativamente os resultados. A profissional oferece todo o suporte técnico e motivacional, mas a mudança efetiva depende do comprometimento do paciente. Essa constatação não representa uma transferência de responsabilidade, mas sim o reconhecimento da natureza colaborativa do processo terapêutico.</p>
+
+    <!-- ==================== SEÇÃO 26 ==================== -->
+    <h2>26. LIMITAÇÕES TECNOLÓGICAS</h2>
+    <p>O site e os sistemas digitais utilizados pela profissional podem sofrer indisponibilidade, falhas técnicas, necessidade de manutenção, problemas de conexão com a internet, incidentes de segurança ou outros eventos fora do controle razoável da profissional.</p>
+    <p>A profissional envidará esforços para minimizar essas interrupções e restaurar a funcionalidade o mais breve possível, mas não pode garantir disponibilidade ininterrupta. Em caso de falhas que prejudiquem o atendimento, serão adotadas medidas de remarcação ou reembolso, conforme o caso, respeitando os direitos do consumidor.</p>
+
+    <!-- ==================== SEÇÃO 27 ==================== -->
+    <h2>27. PROTEÇÃO DE DADOS</h2>
+    <p>As informações pessoais fornecidas pelos usuários e pacientes são tratadas em conformidade com a <strong>Política de Privacidade</strong> disponível no site, que segue a Lei Geral de Proteção de Dados (LGPD).</p>
+    <p>Recomendamos a leitura atenta da Política de Privacidade para compreender como seus dados são coletados, utilizados, armazenados e protegidos.</p>
+    <p><strong>Link para a Política de Privacidade:</strong> <span class="field-placeholder">[LINK PARA POLÍTICA DE PRIVACIDADE]</span></p>
+
+    <!-- ==================== SEÇÃO 28 ==================== -->
+    <h2>28. TERMOS DE USO</h2>
+    <p>Este Aviso de Responsabilidade deve ser interpretado em conjunto com os <strong>Termos de Uso</strong> do site, que estabelecem as regras gerais de acesso, contratação e utilização dos serviços.</p>
+    <p><strong>Link para os Termos de Uso:</strong> <span class="field-placeholder">[LINK PARA TERMOS DE USO]</span></p>
+    <p>A utilização do site implica a aceitação integral dos Termos de Uso, da Política de Privacidade e deste Aviso de Responsabilidade.</p>
+
+    <!-- ==================== SEÇÃO 29 ==================== -->
+    <h2>29. DIREITOS DO PACIENTE</h2>
+    <p>O paciente, na condição de consumidor e titular de dados pessoais, possui direitos assegurados pela legislação brasileira, incluindo:</p>
+    <ul>
+        <li>Atendimento respeitoso, digno e profissional;</li>
+        <li>Informações claras, precisas e compreensíveis sobre os serviços e procedimentos;</li>
+        <li>Privacidade e confidencialidade de suas informações pessoais e de saúde;</li>
+        <li>Proteção de seus dados pessoais nos termos da LGPD;</li>
+        <li>Possibilidade de esclarecer dúvidas e obter respostas adequadas;</li>
+        <li>Liberdade para interromper o acompanhamento a qualquer momento, observadas as obrigações contratuais eventualmente assumidas;</li>
+        <li>Recusa a procedimentos ou orientações, assumindo as consequências de sua decisão.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 30 ==================== -->
+    <h2>30. RECLAMAÇÕES E DÚVIDAS</h2>
+    <p>Para dúvidas, reclamações, sugestões ou solicitações relacionadas a este Aviso, aos serviços ou ao tratamento de dados, o paciente pode contatar a profissional pelos seguintes canais:</p>
+    <ul>
+        <li><strong>E-mail:</strong> <span class="field-placeholder">[E-MAIL]</span></li>
+        <li><strong>Telefone:</strong> <span class="field-placeholder">[TELEFONE]</span></li>
+        <li><strong>WhatsApp:</strong> <span class="field-placeholder">[WHATSAPP]</span></li>
+        <li><strong>Endereço:</strong> <span class="field-placeholder">[ENDEREÇO]</span></li>
+    </ul>
+    <p>A profissional se compromete a analisar e responder reclamações e dúvidas de forma adequada, dentro de um prazo razoável.</p>
+
+    <!-- ==================== SEÇÃO 31 ==================== -->
+    <h2>31. ALTERAÇÕES DESTE AVISO</h2>
+    <p>Este Aviso de Responsabilidade poderá ser atualizado periodicamente para refletir:</p>
+    <ul>
+        <li>Alterações na legislação aplicável;</li>
+        <li>Mudanças nos serviços oferecidos;</li>
+        <li>Atualizações no site ou em suas funcionalidades;</li>
+        <li>Evolução das práticas profissionais;</li>
+        <li>Recomendações de órgãos reguladores ou de classe.</li>
+    </ul>
+    <p>A versão mais recente será sempre publicada nesta página, com a data de atualização indicada.</p>
+    <p><strong>Versão:</strong> <span class="field-placeholder">[VERSÃO]</span></p>
+    <p><strong>Data de publicação:</strong> <span class="field-placeholder">[DATA]</span></p>
+    <p><strong>Última atualização:</strong> <span class="field-placeholder">[DATA]</span></p>
+
+    <!-- ==================== SEÇÃO 32 ==================== -->
+    <h2>32. LEGISLAÇÃO APLICÁVEL</h2>
+    <p>Este Aviso de Responsabilidade e todas as relações decorrentes do uso do site e da contratação dos serviços regem-se pela legislação brasileira, em especial:</p>
+    <ul>
+        <li>Lei nº 8.234/1991 (regulamentação da profissão de nutricionista);</li>
+        <li>Código de Ética e de Conduta do Nutricionista;</li>
+        <li>Lei nº 8.078/1990 (Código de Defesa do Consumidor);</li>
+        <li>Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais);</li>
+        <li>Lei nº 10.406/2002 (Código Civil);</li>
+        <li>Demais normas aplicáveis.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 33 ==================== -->
+    <h2>33. DISPOSIÇÕES FINAIS</h2>
+    <ul>
+        <li>Este Aviso deve ser interpretado de boa-fé, com transparência e respeito aos direitos de todas as partes;</li>
+        <li>A eventual nulidade de uma cláusula não afetará a validade das demais;</li>
+        <li>A ausência de exigência de um direito não constitui renúncia a ele;</li>
+        <li>Os títulos das seções são meramente ilustrativos e não alteram o sentido das disposições;</li>
+        <li>Este documento não se sobrepõe a direitos irrenunciáveis do consumidor ou a normas de ordem pública;</li>
+        <li>A profissional se compromete a atuar sempre dentro dos mais elevados padrões éticos e profissionais.</li>
+    </ul>
+
+    <!-- ==================== SEÇÃO 34 ==================== -->
+    <h2>34. DECLARAÇÃO FINAL</h2>
+    <div class="highlight-box">
+        <p><strong>As informações disponibilizadas neste site possuem finalidade exclusivamente informativa e educativa. Elas não substituem, em qualquer hipótese, a consulta nutricional individualizada, a avaliação profissional presencial ou o acompanhamento personalizado.</strong></p>
+        <p>A utilização responsável dessas informações requer a consideração das particularidades de cada pessoa e a busca por orientação profissional adequada. A profissional não se responsabiliza por decisões tomadas com base unicamente nos conteúdos do site, nem por resultados que não correspondam às expectativas individuais, desde que tenha atuado com a diligência esperada.</p>
+        <p>A saúde é um bem precioso, e o cuidado deve ser individualizado, humano e baseado em evidências. Este site é uma ferramenta de apoio, mas não substitui o olhar atento e a escuta qualificada de um profissional de nutrição.</p>
+    </div>
+
+  
+
+    <!-- ==================== ACEITE ==================== -->
+    <div style="background:#f9f9f9; padding:1.5rem; border-radius:12px; text-align:center; margin:2rem 0;">
+        <p style="font-weight:600; font-size:1.1rem; margin-bottom:0.5rem;">📄 Li e concordo com o Aviso de Responsabilidade Profissional e Uso de Informações.</p>
+        <button id="acceptBtn" class="btn-accept">✅ Concordo e aceito</button>
+        <div id="feedback" class="acceptance-message"></div>
+    </div>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <div class="footer-note">
+        <p style="text-align:center; font-size:0.9rem; color:#4e6b7a;">
+            © <span class="field-placeholder">[ANO]</span> <span class="field-placeholder">[NOME PROFISSIONAL]</span> – Todos os direitos reservados.
+        </p>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('acceptBtn');
+        const feedback = document.getElementById('feedback');
+
+        btn.addEventListener('click', function() {
+            feedback.innerHTML = '✔️ Seu aceite foi registrado. Obrigado por ler o Aviso de Responsabilidade.';
+            feedback.style.color = '#b85c3a';
+            btn.disabled = true;
+            btn.textContent = '✅ Aceito';
+            btn.style.background = '#9e4a2e';
+        });
+    });
+</script>
+</body>
+</html>
