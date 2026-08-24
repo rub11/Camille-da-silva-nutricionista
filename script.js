@@ -63,3 +63,34 @@ document.querySelectorAll('.btn-primary, .btn-whatsapp').forEach(btn => {
         }
     });
 });
+
+// ===== LINKS LEGAIS (exibem modais ou redirecionam) =====
+
+
+
+documentos.forEach(doc => {
+    const el = document.getElementById(doc.id);
+    if (el) {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Cria um modal simples (pode ser substituído por um modal mais elaborado)
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center;
+                z-index: 9999; backdrop-filter: blur(4px);
+            `;
+            modal.innerHTML = `
+                <div style="background: #fff; max-width: 560px; width: 90%; padding: 32px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); position: relative;">
+                    <button style="position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: #24332C;">&times;</button>
+                    <h2 style="color: #315C4A; margin-bottom: 16px;">${doc.titulo}</h2>
+                    <p style="color: #2d3d34; line-height: 1.6;">${doc.conteudo}</p>
+                    <p style="margin-top: 20px; font-size: 0.85rem; color: #5F806D;">Este aviso é parte integrante do site.</p>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            modal.querySelector('button').addEventListener('click', () => modal.remove());
+            modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
+        });
+    }
+});
